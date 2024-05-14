@@ -1,0 +1,83 @@
+.produto-box {
+  border: 3px solid #e9e9e9;
+  border-radius: 18px;
+  max-width: 230px;
+  padding: 10px 10px 20px 10px;
+  display: inline-block;
+  margin: 25px;
+  position: relative; /* Adiciona posicionamento relativo para coordenadas da animação */
+  
+  
+}
+
+.prod-vitrine-descricao-props {
+  padding: 0.8px;
+  font-size:0.7rem ;
+  margin-bottom: 10px;
+}
+
+.prod-vitrine-preco {
+
+  color: #7FFF00;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1rem;
+
+}
+
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    top: 90%;
+    left: 0;
+    z-index: 999;
+    background-color: #006400;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transform: translateY(-50%);
+     transition: right 0.3s ease; 
+    cursor: pointer;
+  }
+  
+  .back-to-top:hover {
+    background-color: #0056b3;
+  }
+  
+/* Adicione este estilo para a mensagem hover */
+.message-hover {
+  position: absolute; /* Posiciona a mensagem em relação ao container pai */
+  top: 50%; /* Ajusta a posição verticalmente */
+  left: 50%; /* Ajusta a posição horizontalmente */
+  transform: translate(-50%, -50%); /* Centraliza a mensagem */
+  background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo com transparência */
+  color: #fff; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Borda arredondada */
+  font-size: 14px; /* Tamanho da fonte */
+  opacity: 0; /* Inicialmente invisível */
+  animation: slideIn 0.3s ease forwards; /* Animação de entrada */
+}
+
+/* Estilo de hover para a mensagem */
+.btn-cart:hover .message-hover {
+  opacity: 1; /* Torna a mensagem visível ao passar o mouse sobre o botão */
+}
+
+/* Animação de entrada */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); /* Inicia 10 pixels acima da posição normal */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Termina na posição normal */
+  }
+}
+
+
+

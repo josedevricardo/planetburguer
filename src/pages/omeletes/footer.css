@@ -1,0 +1,40 @@
+.alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff; /* Cor de fundo */
+    border: 3px solid #000; /* Cor da borda */
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 300px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    z-index: 9999; /* Garante que o alerta fique na frente de outros elementos */
+  }
+  
+  .alert p {
+    margin-bottom: 10px;
+  }
+  
+  .alert button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Cor do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .alert button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+  }
+  
+  .footer {
+    background-color: green;
+    color: white;
+    padding: 20px;
+  }
+  
+  

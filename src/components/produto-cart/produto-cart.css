@@ -1,0 +1,74 @@
+.produto-cart-box {
+    border: 1px solid #e9e9e9;
+    padding: 10px;
+    display: flex;
+    margin: 20px;
+
+}
+
+.produto-cart-box img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.produto-cart-nome {
+        margin: 10px 3px 0px 0px;
+}
+
+
+.produto-cart-valor{
+    color: #D2691E;
+    font-size: 0.8rem;
+    margin: 10px 3px 0px 0px;
+
+
+}
+
+.footer-produto-cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-produto-btn {
+            border: 1px solid #cacaca;
+            padding: 10px 15px;
+            border-radius: 1px;
+            background-color: #fff;
+            cursor: pointer;
+}
+
+.footer-produto-qtd {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.footer-produto-preco {
+     color: #D2691E;
+     font-size: 1rem;
+     font-weight: bold;
+     line-height: 1rem;
+     display: inline-block;
+     width: 86px;
+   
+   
+    
+
+}
+
+
+@media screen and (max-width: 591px) {
+    .footer-produto-cart {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Para alinhar os elementos lado a lado com espaço entre eles */
+        font-size: 0.7rem;
+        padding: 0px;
+    }
+
+    /* Opcional: se você deseja que os elementos ocupem toda a largura em telas menores */
+    .produto-cart-box .produto-cart .footer-produto-cart {
+        flex-basis: calc(50% - 10px); /* Para dividir os elementos igualmente em duas colunas com um espaço de 10px entre eles */
+        margin-bottom: 10px; /* Espaçamento inferior entre os elementos */
+    }
+}
