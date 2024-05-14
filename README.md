@@ -1,4 +1,4 @@
-<img src="[URL_da_Imagem](https://ibb.co/47Tkkg5)" alt="planetburger">
+<img src="https://ibb.co/47Tkkg5" alt="planetburger">
 
 # Getting Started with Create React App
 
