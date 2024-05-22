@@ -52,22 +52,14 @@ function ProdutoVitrine(props) {
 
   return (
     <div className="produto-box text-center">
-      {showBackToTop && (
-        <button onClick={scrollToTop} className="back-to-top">
-          Topo
-        </button>
-      )}
+    
       <img src={props.foto} alt="foto" />
       <div>
         <h2>{props.nome}</h2>
         <p className="prod-vitrine-descricao-props">
-          {showFullDescription ? props.descricao : `${props.descricao.slice(0, 100)}...`}{" "}
+          {showFullDescription ? props.descricao : `${props.descricao.slice(0, 500)}...`}{" "}
           {/* Mostra a descrição completa ou os primeiros 100 caracteres seguidos por "..." */}
-          {!showFullDescription && ( // Exibe o link "Leia Mais" apenas se a descrição estiver truncada
-            <span className="leia-mais" onClick={toggleDescription}>
-              Leia Mais
-            </span>
-          )}
+          
         </p>
         <p className="prod-vitrine-preco">
           {new Intl.NumberFormat("pt-BR", {
@@ -82,8 +74,7 @@ function ProdutoVitrine(props) {
           type="button"
           onClick={AddItem}
           className="btn btn-cart"
-          onMouseEnter={() => setShowMessage(true)} // Exibir mensagem ao passar o mouse
-          onMouseLeave={() => setShowMessage(false)} // Ocultar mensagem ao tirar o mouse
+          
         >
           <img src={bag} className="icon" alt="bag" />
           Comprar

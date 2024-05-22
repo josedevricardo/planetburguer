@@ -46,7 +46,7 @@ const produtos = [
     
     { 
         id: 6,
-        nome: "Black",
+        nome: "X-Black",
         descricao: "Hamburguer, mussarela, presunto, bacon, ovo, batata",
         preco: 17.00,
         foto: "https://i.postimg.cc/nrb5dt2Q/hamburguer.png",

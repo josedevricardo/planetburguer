@@ -19,16 +19,17 @@
 }
 
 .alert button {
-  padding: 5px 10px;
+  padding: 10px 20px;
   background-color: #007bff; /* Cor do botão */
   color: #fff; /* Cor do texto do botão */
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
+  border-radius: 5px;
 }
 
 .alert button:hover {
-  background-color: #0056b3; /* Cor do botão ao passar o mouse */
+  background-color: green; /* Cor do botão ao passar o mouse */
 }
 
 .footer {

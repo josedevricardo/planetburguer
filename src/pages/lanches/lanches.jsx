@@ -23,7 +23,7 @@ function Lanches() {
 
       {showAlert && (
         <div className="alert">
-          <p>Todos Lanches Vai Milho e Salada Menos Os Mistos! Entrega Grátis Bairros Atendidos: Vitória 1 e Vitória 2. Indústrial e Demais R$ 4.00 reais.</p>
+          <p>Todos Lanches vai milho e Salada Menos Os Mistos! Entrega Grátis Bairros Atendidos: Vitória 1 e Vitória 2. Demais Verificar!</p>
           <button onClick={handleCloseAlert}>Fechar</button>
         </div>
       )}

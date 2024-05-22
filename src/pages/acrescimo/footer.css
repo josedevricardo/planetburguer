@@ -25,10 +25,11 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
+    border-radius: 5px;
   }
   
   .alert button:hover {
-    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+    background-color: green; /* Cor do botão ao passar o mouse */
   }
   
   .footer {

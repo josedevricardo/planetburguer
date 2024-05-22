@@ -29,25 +29,6 @@
 }
 
 
-.back-to-top {
-    position: fixed;
-    bottom: 20px;
-    top: 90%;
-    left: 0;
-    z-index: 999;
-    background-color: #006400;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    transform: translateY(-50%);
-     transition: right 0.3s ease; 
-    cursor: pointer;
-  }
-  
-  .back-to-top:hover {
-    background-color: #0056b3;
-  }
   
 /* Adicione este estilo para a mensagem hover */
 .message-hover {
@@ -58,7 +39,7 @@
   background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo com transparência */
   color: #fff; /* Cor do texto */
   padding: 10px 20px; /* Espaçamento interno */
-  border-radius: 10px; /* Borda arredondada */
+  border-radius: 30px; /* Borda arredondada */
   font-size: 14px; /* Tamanho da fonte */
   opacity: 0; /* Inicialmente invisível */
   animation: slideIn 0.3s ease forwards; /* Animação de entrada */
@@ -68,6 +49,46 @@
 .btn-cart:hover .message-hover {
   opacity: 1; /* Torna a mensagem visível ao passar o mouse sobre o botão */
 }
+
+/* produto-vitrine.css */
+.produto-box {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.message-hover {
+  margin-top: 10px;
+  color: green;
+}
+
+
+
+.prod-vitrine-descricao-props {
+  margin: 10px 0;
+}
+
+.prod-vitrine-preco {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.btn-cart {
+  background-color: #006400;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-cart .icon {
+  margin-right: 5px;
+}
+
 
 /* Animação de entrada */
 @keyframes slideIn {
