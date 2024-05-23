@@ -48,11 +48,7 @@ function OmeletesVitrine(props) {
 
   return (
     <div className="produto-box text-center">
-      {showBackToTop && (
-        <button onClick={scrollToTop} className="back-to-top">
-          Topo
-        </button>
-      )}
+    
       <img src={props.foto} alt="foto" />
       <div>
         <h2>{props.nome}</h2>
@@ -70,8 +66,7 @@ function OmeletesVitrine(props) {
           type="button"
           onClick={AddItem}
           className="btn btn-cart"
-          onMouseEnter={() => setShowMessage(true)} // Exibir mensagem ao passar o mouse
-          onMouseLeave={() => setShowMessage(false)} // Ocultar mensagem ao tirar o mouse
+       
         >
           <img src={bag} className="icon" alt="bag" />
           Comprar

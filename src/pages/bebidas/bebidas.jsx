@@ -23,7 +23,7 @@ function Bebidas() {
 
       {showAlert && (
         <div className="alert">
-          <p>Todos Lanches vai milho e Salada Menos Os Mistos! Entrega Grátis Bairros Atendidos: Vitória 1 e Vitória 2. Demais Verificar!</p>
+          <p>Caso faço pedido só de bebidas é cobrado valor da entrega, se pedir juntamente com lanches bairros vitoria 1 e 2 GRÁTIS demais consultar!</p>
           <button onClick={handleCloseAlert}>Fechar</button>
         </div>
       )}

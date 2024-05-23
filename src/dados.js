@@ -323,32 +323,146 @@ const omeletes = [
 const bebidas = [
     { 
         id: 1,
-        nome: "Cerveja Skol Gelada",
-        descricao: "Latão",
-        preco: 5.00,
-        foto: "https://i.postimg.cc/3wpJrwGx/cervejas.png",
-    }, 
-
-    { 
-        id: 2,
-        nome: "Cerveja Brahma Gelada",
+        nome: "Skol Latão",
         descricao: "Latão",
         preco: 5.50,
         foto: "https://i.postimg.cc/3wpJrwGx/cervejas.png",
     }, 
 
+    { 
+        id: 2,
+        nome: "Brahma Latão",
+        descricao: "Latão",
+        preco: 6.00,
+        foto: "https://i.postimg.cc/3wpJrwGx/cervejas.png",
+    }, 
 
     { 
         id: 3,
-        nome: "Agua Com Gás Gás Mineral",
+        nome: "Brahma Mega",
+        descricao: "Mega",
+        preco: 7.00,
+        foto: "https://i.postimg.cc/3wpJrwGx/cervejas.png",
+    },
+
+    { 
+        id: 4,
+        nome: "Antarctica",
+        descricao: "Latão",
+        preco: 5.50,
+        foto: "https://i.ibb.co/5LzvhZY/cervejaantartica.jpg",
+    },
+
+    { 
+        id: 5,
+        nome: "Sub-Zero Latão",
+        descricao: "Latão",
+        preco: 5.00,
+        foto: "https://i.ibb.co/8mDQcjF/subzero.jpg",
+    },
+
+
+    { 
+        id: 6,
+        nome: "Bohemia Latão",
+        descricao: "Latão",
+        preco: 5.50,
+        foto: "https://i.ibb.co/JRFqdNx/bohemia.jpg",
+    },
+
+   
+    { 
+        id: 7,
+        nome: "Guarapan 2L",
+        descricao: "2 litros",
+        preco: 8.00,
+        foto: "https://i.ibb.co/GPV23Vq/guarapan.jpg",
+    },
+
+    { 
+        id: 8,
+        nome: "Fanta Laranja",
+        descricao: "2 litros",
+        preco: 9.00,
+        foto: "https://i.ibb.co/H2JjngT/Fanta-Laranja.jpg",
+    },
+ 
+
+    { 
+        id: 9,
+        nome: "Fanta Uva 2L",
+        descricao: "2 Litros",
+        preco: 9.00,
+        foto: "https://i.ibb.co/JB0XTnY/fanta-uva.jpg",
+    },
+
+    { 
+        id: 10,
+        nome: "Sprite 2L",
+        descricao: "2 Litros",
+        preco: 9.00,
+        foto: "https://i.ibb.co/DzjFz4W/sprite.jpg",
+    },
+
+    { 
+        id: 11,
+        nome: "Pepsi 2L",
+        descricao: "2 Litros",
+        preco: 9.00,
+        foto: "https://i.ibb.co/xXt03nM/pepsi.jpg",
+    },
+
+    { 
+        id: 12,
+        nome: "Mate Couro 1L",
+        descricao: "1 Litro",
+        preco: 6.00,
+        foto: "https://i.ibb.co/5RSqfDZ/mate-e-couro.jpg",
+    },
+
+    { 
+        id: 13,
+        nome: "Coca-Cola 1L",
+        descricao: "1 Litro",
+        preco: 8.00,
+        foto: "https://i.ibb.co/Jn7g05X/coca.jpg",
+    },
+
+    { 
+        id: 13,
+        nome: "Coca-Cola 2L",
+        descricao: "2 Litros",
+        preco: 12.00,
+        foto: "https://i.ibb.co/Jn7g05X/coca.jpg",
+    },
+
+    { 
+        id: 14,
+        nome: "Cola-Lata",
+        descricao: "350Ml",
+        preco: 5.00,
+        foto: "https://i.ibb.co/Y2f1jxr/coca-lata.jpg",
+    },
+
+    { 
+        id: 15,
+        nome: "Refri Mini",
+        descricao: "200Ml Sabores",
+        preco: 2.50,
+        foto: "https://i.ibb.co/PNggVmX/refri-mini.jpg",
+    },
+
+    { 
+        id: 16,
+        nome: "Agua Com Gás",
         descricao: "Com Gás",
         preco: 2.50,
         foto: "https://i.postimg.cc/zfSwbqZq/agua-com-gas-sem-gas.png",
     }, 
     
     { 
-        id: 4,
-        nome: "Agua Sem Gás Mineral",
+        id: 17,
+        nome: "Agua Sem Gás",
         descricao: "Sem Gás",
         preco: 2.50,
         foto: "https://i.postimg.cc/zfSwbqZq/agua-com-gas-sem-gas.png",

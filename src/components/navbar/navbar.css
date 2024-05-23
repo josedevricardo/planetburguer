@@ -2,7 +2,7 @@
 .navbar {
   width: 100%;
   height: 150px;
-  background-image: url("../../assets/bg-navbar.png");
+  background-image: url("../../assets/planetburguer.gif");
   background-size: contain;
   background-repeat: repeat-x;
   display: flex;
@@ -12,6 +12,7 @@
   background-color: #fff;
   border-bottom: 1px solid #ccc;
   transition: all 0.3s ease;
+  
 }
 
 .navbar.sticky {
@@ -21,7 +22,9 @@
   width: 100%;
   z-index: 999;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
 }
+
 
 .logotipo {
   max-width: 100px;
@@ -33,7 +36,10 @@
   display: flex;
   align-items: center;
   padding: 10px;
-  margin-right: 28px;
+  margin-right: 50px;
+  margin-top: 7rem;
+  font-size: 15px;
+  font-weight: 700;
 }
 
 .menu a {

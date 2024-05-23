@@ -36,5 +36,13 @@
   background-color: green;
   color: white;
   padding: 20px;
+  
+
 }
 
+.direitos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
