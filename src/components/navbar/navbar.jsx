@@ -53,20 +53,20 @@ function Navbar(props) {
       {props.showMenu && (
         <div className="menu">
           <div className="menu-item" onClick={toggleSubMenu}>
-            <span>Categoria</span>
+            <span>Menu</span>
             {showSubMenu && (
               <div className="submenu">
                 <Link to="/produto2">Lanches</Link>
                 <Link to="/omeletes">Omeletes</Link>
-                <Link to="/lanches">Especiais</Link>
+                <Link to="/lanches">Artesanal</Link>
                 <Link to="/bebidas">Bebidas</Link>
                 <Link to="/sucos">Sucos</Link>
                 <Link to="/acrescimo">Acréscimos</Link>
-                {/* Adicione mais links para seus submenus conforme necessário */}
+                {/* Adicione mais links para submenus conforme necessário */}
               </div>
             )}
           </div>
-          <Link to="/">Cardápio</Link>
+          <Link to="/">Home</Link>
           <button onClick={openSidebar} className="btn btn-red">
             <img src={bag} className="icon" alt="bag" />
             Sacola

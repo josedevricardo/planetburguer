@@ -55,7 +55,7 @@ function Home() {
         })}
       </div>
       <footer className="footer text-center">
-        <p><a className="direitos" href="https://portfoliojosericardo.netlify.app/" target="_blank">@Desenvolvido Por José Ricardo</a>Todos direitos - Planet Burger 38-99801-7215 R. das Bromélias, 280 - Residencial Vitória 1</p>
+        <p><a className="direitos" href="https://portfoliojosericardo.netlify.app/" target="_blank">@Desenvolvido Por José Ricardo</a>Todos direitos Planet Burger 38-99801-7215 R. das Bromélias, 280 Residencial Vitória 1</p>
       </footer>
     </>
   );
