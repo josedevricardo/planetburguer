@@ -23,14 +23,14 @@ function Acrescimo() {
 
       {showAlert && (
         <div className="alert">
-          <p>Todos Lanches vai milho e Salada Menos Os Mistos! Entrega Grátis Bairros Atendidos: Vitória 1 e Vitória 2. Demais Verificar!</p>
+          <p>Peça mais ingredientes de acordo seu gosto!</p>
           <button onClick={handleCloseAlert}>Fechar</button>
         </div>
       )}
 
       <div className="container">
         <div className="titulo text-center">
-          <h1>Aqui voçê pode adicionar a gosto</h1>
+          <h1>Faça seu pedido ao gosto!</h1>
           <p className="subtitulo">
             Adicione seu pedido na sacola de comprar e ao finalizar será
             redirecionado seu pedido para whatsapp e só aguardar...

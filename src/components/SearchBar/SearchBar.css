@@ -1,0 +1,29 @@
+/* SearchBar.css */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px; /* Ajuste a margem conforme necessário */
+    position: relative;
+}
+
+.search-bar input {
+    width: 400px; /* Ajuste a largura conforme necessário */
+    padding: 5px 10px; /* Ajuste o padding conforme necessário */
+    border: 2px solid rgb(61, 52, 45); /* Borda verde com 50% de opacidade */
+    border-radius: 25px; /* Deixe as bordas arredondadas */
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    background-color: #e6e0e0; /* Cor de fundo (opcional) */
+    color: rgb(19, 18, 18); /* Cor do texto */
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Transição suave */
+}
+
+.search-bar input:focus,
+.search-bar input:hover {
+    transform: scale(1.05); /* Aumenta um pouco o tamanho */
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+

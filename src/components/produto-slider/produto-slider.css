@@ -1,0 +1,194 @@
+
+.produto-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 20px;
+}
+
+
+  
+.produto-item {
+    flex: 0 0 auto; 
+    scroll-snap-align: start; /* rolagem suave, mas depende do contexto */
+    margin-right: 15px; 
+    margin-bottom: 15px; 
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+    padding: 7px; 
+    max-width: 235px; 
+}
+
+  
+  .produto-item:last-child {
+    margin-right: 0;
+  }
+  
+  .produto-slider img{
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 5px 5px 0;
+    margin-bottom: 10px;
+    
+    
+   
+  }
+  
+  .produto-item h3 {
+    margin: 5px 5px 0;
+    margin-bottom: 15px;
+    
+  }
+  
+  .produto-item .tex-decricao {
+    font-size: 13px; 
+    line-height: 1.5; 
+    margin: 0; 
+    padding: 2px 2px 3px;
+    margin-bottom: 15px;
+    
+}
+  
+
+
+button {
+  background-color: #006400;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 13px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.message-hover-slide {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo semi-transparente */
+  border: none;
+  color: #000;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 10px;
+  z-index: 1;
+  margin-top: 90px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .menu {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .btn-red {
+    margin-top: 10px;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  position: relative;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.submenu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1;
+  display: none;
+}
+
+.submenu a {
+  display: block;
+  padding: 5px 0;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.home-link {
+  margin-right: auto;
+}
+
+.logotipo {
+  width: 80px;
+}
+
+.home-icon {
+  width: 24px;
+  margin-right: 5px;
+}
+
+
+.icon {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+  .sticky {
+    padding: 10px;
+  }
+}

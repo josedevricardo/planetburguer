@@ -23,7 +23,7 @@ function Omeletes() {
 
       {showAlert && (
         <div className="alert">
-          <p>Todos Lanches vai milho e Salada Menos Os Mistos! Entrega Grátis Bairros Atendidos: Vitória 1 e Vitória 2. Demais Verificar!</p>
+          <p>Entrega Grátis Bairros Atendidos: Vitória 1 e Vitória 2. Demais Verificar!</p>
           <button onClick={handleCloseAlert}>Fechar</button>
         </div>
       )}

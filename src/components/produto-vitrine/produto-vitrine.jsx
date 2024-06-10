@@ -26,12 +26,7 @@ function ProdutoVitrine(props) {
     };
   }, []);
 
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }
+ 
 
   function AddItem() {
     const item = {
@@ -46,18 +41,16 @@ function ProdutoVitrine(props) {
     setShowMessage(true); // Exibir mensagem ao clicar no botão
   }
 
-  function toggleDescription() {
-    setShowFullDescription(!showFullDescription);
-  }
 
   return (
+
     <div className="produto-box text-center">
     
       <img src={props.foto} alt="foto" />
       <div>
         <h2>{props.nome}</h2>
         <p className="prod-vitrine-descricao-props">
-          {showFullDescription ? props.descricao : `${props.descricao.slice(0, 500)}...`}{" "}
+          {showFullDescription ? props.descricao : `${props.descricao.slice(0, 100)}...`}{" "}
           {/* Mostra a descrição completa ou os primeiros 100 caracteres seguidos por "..." */}
           
         </p>
@@ -83,6 +76,8 @@ function ProdutoVitrine(props) {
         {/* Exibir a mensagem quando showMessage for true */}
       </div>
     </div>
+   
+
   );
 }
 

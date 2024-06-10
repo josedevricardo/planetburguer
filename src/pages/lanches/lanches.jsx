@@ -30,7 +30,7 @@ function Lanches() {
 
       <div className="container">
         <div className="titulo text-center">
-          <h1>Lanches Especiais</h1>
+          <h1>Lanches Artesanais</h1>
           <p className="subtitulo">
             Adicione seu pedido na sacola de comprar e ao finalizar será
             redirecionado seu pedido para whatsapp e só aguardar...

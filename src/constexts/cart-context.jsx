@@ -10,24 +10,26 @@ function CartProvider(props) {
     function AddItemCart(item) {
         let cartItemsNovo = [];
         let findItem = false;
-
+    
         for (var prod of cartItems) {
             if (prod.id === item.id) {
-                item.qtd = prod.qtd + 1;
+                // Criar uma cópia do item existente e atualizar sua quantidade
+                let updatedItem = { ...prod, qtd: prod.qtd + 1 };
+                cartItemsNovo.push(updatedItem);
                 findItem = true;
-                cartItemsNovo.push(item);
             } else {
                 cartItemsNovo.push(prod);
             }
         }
-
+    
         if (!findItem || cartItems.length === 0) {
             cartItemsNovo.push(item);
         }
-
+    
         setCarItems(cartItemsNovo);
         CalcTotal(cartItemsNovo);
     }
+    
 
     function RemoveItemCart(id) {
         let cartItemsNovo = [];

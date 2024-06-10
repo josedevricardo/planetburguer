@@ -1,13 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext  } from "react";
 import "./navbar.css";
 import logo from "../../assets/mascote.png";
 import bag from "../../assets/bag.png";
+import menuIcon from "../../assets/icone-menu.png";
 import Cart from "../cart/cart";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../constexts/cart-context";
 
 function Navbar(props) {
   const [isSticky, setSticky] = useState(false);
   const [showSubMenu, setShowSubMenu] = useState(false);
+  const { totalCart } = useContext(CartContext);
 
   const openSidebar = () => {
     const event = new CustomEvent("openSidebar");
@@ -34,17 +37,6 @@ function Navbar(props) {
     };
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  const scrollToCart = () => {
-    const cartElement = document.getElementById("cart");
-    if (cartElement) {
-      cartElement.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
-
   return (
     <div className={isSticky ? "navbar sticky" : "navbar"}>
       <Link to="/" className="home-link">
@@ -53,6 +45,8 @@ function Navbar(props) {
       {props.showMenu && (
         <div className="menu">
           <div className="menu-item" onClick={toggleSubMenu}>
+          <img src={menuIcon} className="menu-icon" alt="menu icon" />
+
             <span>Menu</span>
             {showSubMenu && (
               <div className="submenu">
@@ -62,25 +56,24 @@ function Navbar(props) {
                 <Link to="/bebidas">Bebidas</Link>
                 <Link to="/sucos">Sucos</Link>
                 <Link to="/acrescimo">Acréscimos</Link>
-                {/* Adicione mais links para submenus conforme necessário */}
               </div>
             )}
           </div>
-          <Link to="/">Home</Link>
+          <Link to="/" className="home-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="home-icon">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+            </svg>
+            Home
+          </Link>
           <button onClick={openSidebar} className="btn btn-red">
             <img src={bag} className="icon" alt="bag" />
-            Sacola
+            Sacola {totalCart.toFixed(2)} {/* Exibe o total do carrinho no botão Sacola */}
           </button>
         </div>
       )}
 
       <Cart id="cart" />
 
-      {isSticky && (
-        <button onClick={scrollToTop} className="scroll-to-top">
-          Topo
-        </button>
-      )}
     </div>
   );
 }

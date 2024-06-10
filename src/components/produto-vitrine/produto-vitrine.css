@@ -11,13 +11,13 @@
   
 }
 
+
+
 .prod-vitrine-descricao-props {
   padding: 0.5px;
-  font-size: 0.7rem;
+  font-size: 0.5px;
   margin-bottom: 10px;
-  overflow: hidden; /* Esconder texto que extrapola o contêiner */
-  text-overflow: ellipsis; /* Adicionar reticências para indicar texto cortado */
-  white-space: nowrap; /* Impedir que o texto quebre em várias linhas */
+  word-wrap: break-word;
 }
 .prod-vitrine-preco {
 
@@ -25,6 +25,7 @@
   font-size: 1.2rem;
   font-weight: bold;
   line-height: 1rem;
+  margin-top: 8px;
 
 }
 
@@ -49,21 +50,6 @@
 .btn-cart:hover .message-hover {
   opacity: 1; /* Torna a mensagem visível ao passar o mouse sobre o botão */
 }
-
-/* produto-vitrine.css */
-.produto-box {
-  margin: 20px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.message-hover {
-  margin-top: 10px;
-  color: green;
-}
-
 
 
 .prod-vitrine-descricao-props {
@@ -101,8 +87,4 @@
     transform: translateY(0); /* Termina na posição normal */
   }
 }
-
-
-
-
 

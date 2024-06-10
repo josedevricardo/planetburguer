@@ -50,7 +50,7 @@ function Checkout() {
     // Função para redirecionar para o WhatsApp com os dados preenchidos
     const redirectToWhatsApp = () => {
         const mensagem = buildWhatsAppMessage();
-        const numeroWhatsApp = '38998017215'; // Substitua pelo seu número de WhatsApp
+        const numeroWhatsApp = '38998017215'; // número de WhatsApp
 
         window.open(`https://wa.me/${numeroWhatsApp}?text=${mensagem}`, '_blank');
     };
@@ -63,53 +63,55 @@ function Checkout() {
         <>
             <Navbar />
             <div className="container">
-                <div className="titulo text-center">
-                    <h1>Finalizar Pedido</h1>
-                </div>
+    <div className="titulo text-center">
+        <h1>Finalizar Pedido</h1>
+    </div>
 
-                <div className="col-3">
-                    <div className="box-checkout">
-                        <h3>Dados Pessoais</h3>
-                        <div className="input-group">
-                            <p>Nome Completo</p>
-                            <input type="text" id="nome" />
-                        </div>
-                        <div className="input-group">
-                            <p>Email 'Opcional'</p>
-                            <input type="email" id="email" />
-                        </div>
-                        <div className="input-group">
-                            <p>Telefone Contato</p>
-                            <input type="text" id="fone" />
-                        </div>
-                        <div className="input-group">
-                            <p>Forma de Pagamento</p>
-                            <input type="text" id="pagamento" />
-                        </div>
-                    </div>
-                </div>
+    <div className="col-3">
+        <div className="box-checkout">
+            <h3>Dados Pessoais</h3>
+            <div className="input-group">
+                <p>Nome Completo</p>
+                <input type="text" id="nome" placeholder="Digite seu nome" />
+            </div>
 
-                <div className="col-3">
-                    <div className="box-checkout">
-                        <h3>Endereço de Entrega</h3>
-                        <div className="input-group">
-                            <p>Bairro</p>
-                            <input type="text" id="bairro" />
-                        </div>
-                        <div className="input-group">
-                            <p>Número Casa</p>
-                            <input type="text" id="numero" />
-                        </div>
-                        <div className="input-group">
-                            <p>Rua</p>
-                            <input type="text" id="rua" />
-                        </div>
-                        <div className="input-group">
-                            <p>Informe Que Retirar do Lanche</p>
-                            <input type="text" id="text-inform" />
-                        </div>
-                    </div>
-                </div>
+            <div className="input-group">
+                <p>Telefone Contato</p>
+                <input type="text" id="fone" placeholder="Digite seu telefone de contato" />
+            </div>
+            <div className="input-group">
+                <p>Forma de Pagamento</p>
+                <input type="text" id="pagamento" placeholder="Digite a forma de pagamento" />
+            </div>
+
+            <div className="input-group">
+                <p>Email 'Opcional'</p>
+                <input type="email" id="email" placeholder="Digite seu email (opcional)" />
+            </div>
+        </div>
+    </div>
+
+    <div className="col-3">
+        <div className="box-checkout">
+            <h3>Endereço de Entrega</h3>
+            <div className="input-group">
+                <p>Bairro</p>
+                <input type="text" id="bairro" placeholder="Digite seu bairro" />
+            </div>
+            <div className="input-group">
+                <p>Número Casa</p>
+                <input type="text" id="numero" placeholder="Digite o número da casa" />
+            </div>
+            <div className="input-group">
+                <p>Rua</p>
+                <input type="text" id="rua" placeholder="Digite a rua" />
+            </div>
+            <div className="input-group">
+                <p>Informe Que Retirar</p>
+                <input type="text" id="text-inform" placeholder="Do Lanche Omeletes acréscimos" />
+            </div>
+        </div>
+    </div>
 
                 <div className="col-3">
                     <div className="box-checkout">

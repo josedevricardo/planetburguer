@@ -7,16 +7,12 @@ import { useContext } from "react";
 
 function LancheVitrine(props) {
   const { AddItemCart } = useContext(CartContext);
-  const [showBackToTop, setShowBackToTop] = useState(false);
+  
   const [showMessage, setShowMessage] = useState(false); // Estado para controlar a exibição da mensagem
 
   useEffect(() => {
     function handleScroll() {
-      if (window.pageYOffset > 100) {
-        setShowBackToTop(true);
-      } else {
-        setShowBackToTop(false);
-      }
+      
     }
 
     window.addEventListener("scroll", handleScroll);
@@ -26,12 +22,7 @@ function LancheVitrine(props) {
     };
   }, []);
 
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }
+
 
   function AddItem() {
     const item = {

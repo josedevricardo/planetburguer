@@ -61,6 +61,7 @@ function Produto2Vitrine(props) {
         </p>
       </div>
 
+
       <div>
         <button
           type="button"
