@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fd31227a.css",
+    "main.js": "/static/js/main.8524096a.js",
+    "static/media/planetburguer.gif": "/static/media/planetburguer.3b16e8f5bddd50e0b122.gif",
+    "static/media/mascote.png": "/static/media/mascote.0485cec882c336b44eb5.png",
+    "static/media/back.png": "/static/media/back.60b9a6224ff1c8019a89.png",
+    "index.html": "/index.html",
+    "main.fd31227a.css.map": "/static/css/main.fd31227a.css.map",
+    "main.8524096a.js.map": "/static/js/main.8524096a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd31227a.css",
+    "static/js/main.8524096a.js"
+  ]
+}
